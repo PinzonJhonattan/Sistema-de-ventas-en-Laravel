@@ -139,7 +139,7 @@
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <label for="moneda">Moneda</label>
-                                                <select name="moneda" class="form-control" value="{{old('moneda')}}" required>
+                                                <select name="moneda" class="form-control" required>
                                                     @foreach ($monedas as $moneda)
                                                         <option value="{{ $moneda->code }}">{{ $moneda->code }}</option>
                                                     @endforeach
