@@ -23,8 +23,9 @@ return new class extends Migration
             $table->string (column: 'cantidad_impuesto');
             $table->string (column: 'nombre_impuesto');
             $table->string (column: 'moneda');
-            $table->string (column: 'dirección');
+            $table->string (column: 'direccion');
             $table->string (column: 'ciudad');
+            $table->string (column: 'departamento');
             $table->string (column: 'codigo_postal');
             $table->text (column: 'logo');
             $table->timestamps();
