@@ -135,7 +135,7 @@
                                         <label for="moneda">Moneda</label>
                                         <select name="moneda" class="form-control" required>
                                             @foreach ($monedas as $moneda)
-                                                <option value="{{ $moneda->code }}" {{$empresa->moneda == $moneda->id ? 'selected':''}} >{{ $moneda->code }}</option>
+                                                <option value="{{ $moneda->code }}" {{$empresa->moneda == $moneda->code ? 'selected':''}} >{{ $moneda->code }}</option>
                                             @endforeach
                                         </select>
                                         @error('moneda')
