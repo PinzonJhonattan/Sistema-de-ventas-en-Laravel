@@ -1,18 +1,16 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', 'Sistema de Ventas')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1><b>Bienvenido a {{$empresa->nombre_empresa}}</b></h1>
+    <hr>
 @stop
 
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
 @stop
 
 @section('css')
-    {{-- Add here extra stylesheets --}}
-    {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}}
 @stop
 
 @section('js')

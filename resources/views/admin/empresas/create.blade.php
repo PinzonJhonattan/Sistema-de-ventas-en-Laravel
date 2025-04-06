@@ -136,12 +136,12 @@
                                             </div>
                                         </div>
                                         
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"> 
                                             <div class="form-group">
                                                 <label for="moneda">Moneda</label>
                                                 <select name="moneda" class="form-control" required>
                                                     @foreach ($monedas as $moneda)
-                                                        <option value="{{ $moneda->code }}">{{ $moneda->code }}</option>
+                                                        <option value="{{ $moneda->id }}">{{ $moneda->code }}</option>
                                                     @endforeach
                                                 </select>
                                                 @error('moneda')
