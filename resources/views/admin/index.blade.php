@@ -14,5 +14,17 @@
 @stop
 
 @section('js')
-    <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
+    @if ( ($titulo = Session::get('titulo')) && ($mensaje = Session::get('mensaje')) && ($icono = Session::get('icono')) )
+        <script> 
+            Swal.fire({
+            title: "{{$titulo}}",
+            text: "{{$mensaje}}",
+            icon: "{{$icono}}"
+            });
+        </script>
+    @endif
+
+
+
 @stop
+

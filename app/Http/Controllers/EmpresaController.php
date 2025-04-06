@@ -193,7 +193,9 @@ class EmpresaController extends Controller
 
         
         return redirect()->route('admin.index')
-        ->with('mensaje','Se modifico los datos de la empresa de manera correcta');
+        ->with('titulo','Muy bien!')
+        ->with('mensaje','Se modificaron los datos de la empresa correctamente')
+        ->with('icono','success');
     }
 
     /**
